@@ -1,5 +1,5 @@
 <template>
-  <Header :text="text" />
+  <Header @changeTitle="ubahText" :text="text" />
   <!-- ============================================================== -->
   <!-- <input type="text" v-model="cari" placeholder="cari" /> -->
   <!-- <h2>Welcome, {{ nama }}</h2> -->
@@ -36,6 +36,11 @@ export default {
     return {
       text: "Ini adalah text dari data",
     };
+  },
+  methods: {
+    ubahText(newText) {
+      this.text = newText;
+    },
   },
 };
 
