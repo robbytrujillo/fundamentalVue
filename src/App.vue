@@ -1,6 +1,8 @@
 <template>
   <h2>Welcome, {{ nama }}</h2>
-  <button v-on:click="changeName">Change Name</button>
+  <!-- <button v-on:click="changeName">Change Name</button> -->
+  <!-- disingkat -->
+  <button @click="changeName">Change Name</button>
 </template>
 
 <script>
