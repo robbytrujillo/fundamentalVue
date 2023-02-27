@@ -1,17 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h2>Welcome, {{ nama }}</h2>
+  <button v-on:click="changeName">Change Name</button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  data() {
+    return {
+      nama: "Robby Ilhamkusuma",
+    };
+  },
+  methods: {
+    changeName() {
+      this.nama = "Asep";
+    },
+  },
+};
 </script>
 
 <style>
