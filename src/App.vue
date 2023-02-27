@@ -31,11 +31,11 @@ export default {
       panggil: "",
 
       products: [
-        { id: 1, title: "Product 1", price: 1000 },
-        { id: 2, title: "Product 2", price: 2000 },
-        { id: 3, title: "Product 3", price: 3000 },
-        { id: 4, title: "Product 4", price: 4000 },
-        { id: 5, title: "Product 5", price: 5000 },
+        // { id: 1, title: "Product 1", price: 1000 },
+        // { id: 2, title: "Product 2", price: 2000 },
+        // { id: 3, title: "Product 3", price: 3000 },
+        // { id: 4, title: "Product 4", price: 4000 },
+        // { id: 5, title: "Product 5", price: 5000 },
       ],
     };
   },
@@ -43,6 +43,25 @@ export default {
     changeName() {
       this.nama = "Asep";
     },
+  },
+  // Lifecycle hooks
+  // beforeCreate() {
+  //   console.log("Before Create");
+  // },
+  created() {
+    //console.log("Created");
+    this.products = [{ id: 1, title: "Product 1", price: 1000 },
+        { id: 2, title: "Product 2", price: 2000 },
+        { id: 3, title: "Product 3", price: 3000 },
+        { id: 4, title: "Product 4", price: 4000 },
+        { id: 5, title: "Product 5", price: 5000 },
+      ],
+  // },
+  // beforeMount() {
+  //   console.log("Before Mount");
+  // },
+  // mounted() {
+  //   console.log("Mounted");
   },
 };
 </script>
