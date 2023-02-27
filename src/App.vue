@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header :text="text" />
   <!-- ============================================================== -->
   <!-- <input type="text" v-model="cari" placeholder="cari" /> -->
   <!-- <h2>Welcome, {{ nama }}</h2> -->
@@ -31,6 +31,11 @@ export default {
   name: "App",
   components: {
     Header,
+  },
+  data() {
+    return {
+      text: "Ini adalah text dari data",
+    };
   },
 };
 
